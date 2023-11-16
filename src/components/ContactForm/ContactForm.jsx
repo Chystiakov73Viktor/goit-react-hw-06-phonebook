@@ -35,7 +35,6 @@ export const ContactForm = () => {
 
     if (isExist) {
       alert(`${values.name} is already in contacts.`);
-      resetForm();
       return;
     }
     dispatch(addContact(values));
